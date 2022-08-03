@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Project 3: Paint Mixer</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading--primary">Wongelemengist Yilma Nadew</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item projects-link">
+            <a href="#" class="nav__link">Projects</a>
+            <div class="project-dropdown">
+              <a href="filling.html" class="dropdown_link">Project 1</a
+              ><a href="cage.html" class="dropdown_link">Project 2</a
+              ><a href="mixer.html" class="dropdown_link">Project 3 </a>
+              <a href="packing.html" class="dropdown_link">Project 4 </a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="resume.html" class="nav__link">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="overview">
+        <div class="overview__img-box">
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+          <div class="overview__slider">
+            <div class="overview__slide">
+              <img
+                src="img/mixer-img-1.JPG"
+                alt="Filling Machine"
+                class="overview__img"
+              />
+            </div>
+            <div class="overview__slide">
+              <img
+                src="img/mixer-img-2.webp"
+                alt="Filling Machine"
+                class="overview__img"
+              />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+        </div>
+        <div class="overview__text">
+          <div class="overview__title">
+            <h2 class="heading--secondary margin-top">Paint Mixer Machine</h2>
+          </div>
+        </div>
+      </div>
+      <section class="features">
+        <div class="features__box">
+          <h3 class="heading--teritiary">
+            <ion-icon class="icon--heading" name="cube"></ion-icon>Description
+          </h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Design of a Industrial Paint Mixer Machine
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Determine the operation parameters including speed of blade,
+              rising and retracting time of the Hydraulic Piston.
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Have a capacity range of mixing 600 Liters of paint with a range
+              of viscosity.
+            </li>
+          </ul>
+        </div>
+
+        <div class="features__box">
+          <h3 class="heading--teritiary">
+            <ion-icon class="icon--heading" name="construct"></ion-icon>How?
+          </h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Solidworks is utilized to develop the 3D model.
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              ANSYS Work Bench to calculate the stress caused by the static and
+              dynamic elements and check for bending.
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Used Python to compute the bearing loads and choose from SKF
+              Bearing Catalogue.
+            </li>
+          </ul>
+        </div>
+        <div class="features__box">
+          <h3 class="heading--teritiary">
+            <ion-icon class="icon--heading" name="map"></ion-icon>Results
+          </h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              After several iterations, the manufacturing was satisfactory and
+              the end results matched initial expectations.
+            </li>
+
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              I along the manufacturing team scaled up the product to make it
+              suitable to accomodate and mix 1000 Liters of paint.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="filling.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

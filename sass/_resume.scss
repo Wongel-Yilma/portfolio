@@ -1,0 +1,185 @@
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.side-nav {
+  &__list {
+    list-style: none;
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  &__item {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    background-color: $secondary;
+    padding: 1.2rem 0 1.2rem 2.4rem;
+    transition: all 0.2s;
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    transform: scaleY(0);
+    background-color: $primary-dark;
+    transition: transform 0.3s, width 0.5s 0.3s;
+  }
+
+  &__item:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+  &__link:link,
+  &__link:visited {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: $primary-dark;
+    z-index: 20;
+    transition: color 0.3s;
+  }
+  &__item:hover &__link {
+    color: rgba($secondary-light, 1);
+  }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+.main-content {
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2rem;
+  background-color: $grey-light-2;
+  box-shadow: $box-shadow-light;
+
+  &__position {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    background-image: $to-right-gradient;
+    color: $primary;
+    justify-content: center;
+    padding: 0.8rem 0;
+  }
+  &__unit {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__property {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: $secondary-dark;
+  }
+  &__item {
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4.8rem;
+  row-gap: 4.8rem;
+  padding: 2rem;
+  display: none;
+  @include respond(tab-mid) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2rem;
+  background-color: $grey-light-2;
+  box-shadow: $box-shadow-light;
+  &__name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    background-image: $to-right-gradient;
+    color: $primary;
+    justify-content: center;
+    padding: 0.8rem 0;
+  }
+  &__unit {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__property {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: $secondary-dark;
+  }
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2rem;
+  // background-color: $grey-light-2;
+  box-shadow: $box-shadow-light;
+  align-items: center;
+
+  &__name {
+    align-self: stretch;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    background-image: $to-right-gradient;
+    color: $primary;
+    justify-content: center;
+    padding: 0.8rem 0;
+  }
+  &__item {
+    list-style: none;
+  }
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: $secondary-dark;
+  }
+}
+.active-content {
+  background-color: $primary-dark;
+  color: $secondary-light !important;
+}

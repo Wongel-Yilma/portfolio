@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Project 4: Flow Packing Machine</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading--primary">Wongelemengist Yilma Nadew</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item projects-link">
+            <a href="#" class="nav__link">Projects</a>
+            <div class="project-dropdown">
+              <a href="filling.html" class="dropdown_link">Project 1</a
+              ><a href="cage.html" class="dropdown_link">Project 2</a
+              ><a href="mixer.html" class="dropdown_link">Project 3 </a>
+              <a href="packing.html" class="dropdown_link">Project 4 </a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="resume.html" class="nav__link">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="overview">
+        <div class="overview__img-box">
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+          </div>
+          <div class="overview__slider">
+            <div class="overview__slide">
+              <img
+                src="img/packing-img-1.JPG"
+                alt="Filling Machine"
+                class="overview__img"
+              />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+        </div>
+        <div class="overview__text">
+          <div class="overview__title">
+            <h2 class="heading--secondary margin-top">Flow Packing Machine</h2>
+          </div>
+        </div>
+      </div>
+      <section class="features">
+        <div class="features__box">
+          <h3 class="heading--teritiary">
+            <ion-icon class="icon--heading" name="cube"></ion-icon>Description
+          </h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Concept generation of vertical sealing mechianism
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Determine the operation parameters and synchronising the speed of
+              operations (Film Unwinding, Soap Delivery, Verical Sealing and
+              Horizontal sealing)
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Optimizing the bag forming mechanism
+            </li>
+          </ul>
+        </div>
+
+        <div class="features__box">
+          <h3 class="heading--teritiary">
+            <ion-icon class="icon--heading" name="construct"></ion-icon>How?
+          </h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Solidworks is utilized to develop the 3D model.
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Used other machinery mechanisms as an inspiration for solving the
+              bag forming problem.
+            </li>
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Co-operate with the manufaturing team to ease mass production
+              processes.
+            </li>
+          </ul>
+        </div>
+        <div class="features__box">
+          <h3 class="heading--teritiary">
+            <ion-icon class="icon--heading" name="map"></ion-icon>Results
+          </h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              Automating the packing machine was possible. It was initially
+              designed to pack bar soap.
+            </li>
+
+            <li class="features__item">
+              <div>
+                <ion-icon class="icon--list" name="checkmark-circle"></ion-icon>
+              </div>
+              The Flow packing Machine was modified to suit the type of product
+              to be packed.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="filling.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

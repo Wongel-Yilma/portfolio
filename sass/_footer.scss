@@ -1,0 +1,47 @@
+.footer {
+  padding: 4rem 0;
+  background-color: $primary;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  &__logo-box {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & p {
+      color: $secondary;
+      font-size: 1.6rem;
+      margin-top: 0.5rem;
+    }
+  }
+  &__logo {
+    height: 8rem;
+    width: 8rem;
+  }
+  &__nav {
+    grid-column: 3/5;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+  }
+  &__icon {
+    fill: $secondary;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  &__link {
+    text-decoration: none;
+  }
+
+  &__icon:hover,
+  &__icon:active {
+    fill: rgba($secondary-dark, 0.8);
+  }
+}

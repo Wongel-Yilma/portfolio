@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <script
+    
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Resume: Wongelemengist</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading--primary">Wongelemengist Yilma Nadew</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item projects-link">
+            <a href="#" class="nav__link">Projects</a>
+            <div class="project-dropdown">
+              <a href="filling.html" class="dropdown_link"
+                >Project 1</a
+              ><a href="cage.html" class="dropdown_link">Project 2</a
+              ><a href="mixer.html" class="dropdown_link">Project 3 </a>
+              <a href="packing.html" class="dropdown_link">Project 4 </a>
+            </div>
+          </li>
+           <li class="nav__item">
+            <a href="resume.html" class="nav__link">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="resume container ">
+      <div class="side-nav">
+        <ul class="side-nav__list">
+          <li class="side-nav__item active-content" onclick="viewContent(1)">
+            <a href="#" class="side-nav__link active-content">
+              <ion-icon class="side-nav__icon" name="list-box"></ion-icon>
+              <span>Work Experience</span>
+            </a>
+          </li>
+          <li class="side-nav__item onclick=" onclick="viewContent(2)">
+            <a href="#" class="side-nav__link">
+              <ion-icon class="side-nav__icon" name="book"></ion-icon>
+              <span>Education</span>
+            </a>
+          </li>
+          <li class="side-nav__item" onclick="viewContent(3)">
+            <a href="#" class="side-nav__link">
+              <ion-icon class="side-nav__icon" name="trending-up"></ion-icon>
+              <span>Skills</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <main>
+        <div class="main-content">
+          <div class="content  ">
+            <div class="work">
+              <div class="work__position">
+                <p>Position:</p>
+                <span>Mechanical Design Engineer</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon
+                    class="work__icon"
+                    name="information-circle"
+                  ></ion-icon>
+                  <span>Name:</span>
+                </p>
+                <span class="work__value">ZG Industrial Automation</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> City:</span>
+                </p>
+                <span class="work__value">Addis Ababa</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> Country:</span>
+                </p>
+                <span class="work__value">Ethiopia</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="clock"></ion-icon>
+                  <span>Date:</span>
+                </p>
+                <span class="work__value">28/08/2021-Present</span>
+              </div>
+
+              <div class="work__description">
+                <ul class="work__list"></ul>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+
+                    Design and development of simpler mechanisms for existing
+                    systems
+                  </span>
+                </li>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                    Concept Design and Detail Design of industrial machinery
+                  </span>
+                </li>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+
+                  <span>
+                    Provide maintenance to machinery</li>
+
+                  </span>
+                  
+              </ul>
+            </div>
+            </div>
+            <div class="work">
+              <div class="work__position">
+                <p>Position:</p>
+                <span>Mechanical Designer</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon
+                    class="work__icon"
+                    name="information-circle"
+                  ></ion-icon>
+                  <span>Name:</span>
+                </p>
+                <span class="work__value">Samri Automation Machinery</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> City:</span>
+                </p>
+                <span class="work__value">Addis Ababa</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> Country:</span>
+                </p>
+                <span class="work__value">Ethiopia</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="clock"></ion-icon>
+                  <span>Date:</span>
+                </p>
+                <span class="work__value">14/06/2021-13/08/2021</span>
+              </div>
+
+              <div class="work__description">
+                <ul class="work__list"></ul>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+
+                    Interpret customer needs into technical parameters
+                  </span>
+                </li>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                    Concept Design and Detail Design Analysis
+                  </span>
+                </li>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+
+                  <span>
+                   Modelling, Drafting 2D Engineering Drawings for manufacturing
+                  </span>
+                </li>
+                  
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+              <div class="work__position">
+                <p>Position:</p>
+                <span>Voluntary Teacher</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon
+                    class="work__icon"
+                    name="information-circle"
+                  ></ion-icon>
+                  <span>Name:</span>
+                </p>
+                <span class="work__value">Ahoon Studies Training PLC</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> City:</span>
+                </p>
+                <span class="work__value">Addis Ababa</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> Country:</span>
+                </p>
+                <span class="work__value">Ethiopia</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="clock"></ion-icon>
+                  <span>Date:</span>
+                </p>
+                <span class="work__value">08/10/2016-10/12/2019</span>
+              </div>
+
+              <div class="work__description">
+                <ul class="work__list"></ul>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                    Provide Audio-Visual aids.
+                  </span>
+                </li>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                    Create tutorial videos on Mechanics Courses in Amharic Language.
+                  </span>
+                </li>  
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+              <div class="work__position">
+                <p>Position:</p>
+                <span>Assistant Mechanical Designer</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon
+                    class="work__icon"
+                    name="information-circle"
+                  ></ion-icon>
+                  <span>Name:</span>
+                </p>
+                <span class="work__value">Marast General Mechanics</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> City:</span>
+                </p>
+                <span class="work__value">Addis Ababa</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> Country:</span>
+                </p>
+                <span class="work__value">Ethiopia</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="clock"></ion-icon>
+                  <span>Date:</span>
+                </p>
+                <span class="work__value">26/07/2018-16/09/2018</span>
+              </div>
+
+              <div class="work__description">
+                <ul class="work__list"></ul>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                    Design Light Industry Machinery
+                  </span>
+                </li>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                    Manufacuring of the designed Machinery or Product in the workshop
+                  </span>
+                </li>  
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                   Installation of machinery in Industrial Plants.
+                  </span>
+                </li> 
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+              <div class="work__position">
+                <p>Position:</p>
+                <span>Assistant Mechanic</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon
+                    class="work__icon"
+                    name="information-circle"
+                  ></ion-icon>
+                  <span>Name:</span>
+                </p>
+                <span class="work__value">Grand Repair Shop</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> City:</span>
+                </p>
+                <span class="work__value">Hawassa</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="pin"></ion-icon>
+                  <span> Country:</span>
+                </p>
+                <span class="work__value">Ethiopia</span>
+              </div>
+              <div class="work__unit">
+                <p class="work__property">
+                  <ion-icon class="work__icon" name="clock"></ion-icon>
+                  <span>Date:</span>
+                </p>
+                <span class="work__value">15/08/2017-22/09/2017</span>
+              </div>
+
+              <div class="work__description">
+                <ul class="work__list"></ul>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                    Maintenance of vehicles.
+                  </span>
+                </li>
+                <li class="work__item">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <span>
+                   Modification of vehicle parts
+                  </span>
+                </li>  
+           
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="content">
+          <div class="education">
+            <div class="education__name">Mechanical Engineerng</div>
+            <div class="education__unit">
+                <p class="education__property">
+                  
+                  <ion-icon  class="education__icon" name="podium"></ion-icon>
+                  <span>Level</span>
+                </p>
+                <span class="education__value"><strong>B.Sc. Degree</strong> </span>
+              </div>
+            <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon
+                    class="education__icon"
+                    name="information-circle"
+                  ></ion-icon>
+                  <span>Institution Name:</span>
+                </p>
+                <span class="education__value">Addis Ababa University</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon class="education__icon" name="funnel"></ion-icon>
+                  <span>Type</span>
+                </p>
+                <span class="education__value">On Campus</span>
+              </div>
+              
+              <div class="education__unit">
+                <p class="education__property">
+                   <ion-icon class="education__icon" name="clock"></ion-icon>
+
+                  <span>Date</span>
+                </p>
+                <span class="education__value">05/09/2015 - 25/12/2020</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon class="education__icon" name="school"></ion-icon>
+                  <span>Status:</span>
+                </p>
+                <span class="education__value">Completed</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon class="education__icon" name="medal"></ion-icon>
+                  <span>GPA:</span>
+                </p>
+                <span class="education__value"><strong>3.93</strong> </span>
+              </div>
+          </div>
+          
+          <div class="education">
+            <div class="education__name">Introduction to Robotics</div>
+            <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon
+                    class="education__icon"
+                    name="information-circle"
+                  ></ion-icon>
+                  <span>Institution Name:</span>
+                </p>
+                <span class="education__value">Northwestern University via Coursera</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon class="education__icon" name="funnel"></ion-icon>
+                  <span>Type</span>
+                </p>
+                <span class="education__value">Online</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                  
+                  <ion-icon  class="education__icon" name="podium"></ion-icon>
+                  <span>Level</span>
+                </p>
+                <span class="education__value">Course Certificate</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                   <ion-icon class="education__icon" name="clock"></ion-icon>
+
+                  <span>Date</span>
+                </p>
+                <span class="education__value">05/09/2020 - present</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon class="education__icon" name="school"></ion-icon>
+                  <span>Status:</span>
+                </p>
+                <span class="education__value">Ongoing</span>
+              </div>
+              <div class="education__unit">
+                <p class="education__property">
+                  <ion-icon class="education__icon" name="medal"></ion-icon>
+                  <span>Grade:</span>
+                </p>
+                <span class="education__value">96.7%</span>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="content">
+          <div class="skill">
+            <div class="skill__name">Digital Skills</div>
+            <p>Have a good Experince with:</p>
+            <ul class="skill__list">
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>ANSYS</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>Auto_CAD</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>CF-Turbo</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>Python</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>MATLAB</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>c++</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>Coppeliasim</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>SolidWorks</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>HTML and CSS</span>
+
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>JavaScript</span>
+              
+              </li>
+            </ul>
+            
+          </div>
+          <div class="skill">
+            <div class="skill__name">Language Skills</div>
+            <p class="skill__language">English </p>
+              <ul class="skill__list">
+                <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>Listening: C2</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>Reading: C2</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>Speaking: C1</span>
+              </li>
+              <li class="skill__item"><ion-icon class="skill__icon" name="done-all"></ion-icon>
+              <span>Writing: C1</span>
+              </li>
+
+                
+              </ul>
+            </p>
+            <p class="skill__language">Amharic: Mother Tongue</p>
+          </div>
+        </div>
+        </div>
+      </main>
+    </div>
+    <script src="resume.js"></script>
+  </body>
+</html>
